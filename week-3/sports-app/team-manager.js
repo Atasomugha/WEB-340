@@ -4,7 +4,7 @@
     Author: Professor Krasso
     Date: 22 January 2023
     Modified By: Anachebe Asomugha
-    Description: team array module for WEB 340 
+    Description: team information module for WEB 340 
                  Assignment 3.2 - Node's Module System
 ================================================                                  
  */
@@ -24,13 +24,13 @@ const teams = [
 ]
 
 
-function getTeams() {
+function getTeams() { // Function for Team array
     return teams;
 };
 
-module.exports.getTeams = getTeams;
+module.exports.getTeams = getTeams; // Exporting function
 
-function getTeam(name) {
+function getTeam(name) { // Function for finding single team
     for(let team of teams) {
         if (team.name === name){
             return team;
@@ -39,15 +39,15 @@ function getTeam(name) {
     
 };
 
-module.exports.getTeam = getTeam;
+module.exports.getTeam = getTeam; // Exporting function
 
-function displayTeam(team) {
+function displayTeam(team) { // Function for displaying team information
     return "Name: " + team.name + '\n' +
             "Mascot: " + team.mascot + '\n' +
             "Player Count: " + team.playerCount + '\n';
 
 };
-module.exports.displayTeam = displayTeam;
+module.exports.displayTeam = displayTeam; // Exporting function
 
 
 

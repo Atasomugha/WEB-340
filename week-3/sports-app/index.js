@@ -23,14 +23,15 @@ console.log(TeamManager.displayTeam(team));
 // First Single-Team Display
 const rcu = TeamManager.getTeam("Rocket City University");
 
-console.log('\n','\n', "- - DISPLAYING SINGLE TEAM - -");
+console.log('\n','\n')
+console.log("- - DISPLAYING A SINGLE TEAM - -");
 console.log(TeamManager.displayTeam(rcu));
 
 // Second Single-Team Display
 
 const dvsu = TeamManager.getTeam("Death Valley State University");
 
-console.log("- - DISPLAYING SINGLE TEAM - -");
+console.log("- - DISPLAYING A SINGLE TEAM - -");
 console.log(TeamManager.displayTeam(dvsu));
 
 
